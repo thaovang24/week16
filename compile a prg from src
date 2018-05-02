@@ -1,0 +1,13 @@
+Thao Vang
+
+Linux 2461
+
+COMPILE a Math Calculator PROGRAM FROM SOURCE
+
+I cloned a math calculator for algebra from github. The prerequisite to configure this program was a long list of dependencies for Debian build. In order to properly managed my cloned repositories I had to create a folder called singular using the command mkdir to create this. After creating this folder I have to move all the files that was cloned and deposit into the source folder. Used command cp to copy the source folder into my new singular folder for better application management. 
+
+Once this is done, I used browse to the directory where singular is located and downloaded additional sources called surfer which I used the command wget to download the surfer and singular sources to different folders and extract the tar  packages that will need to compile using gcc and patch different version of surfer (This steps is long and following the exact directions is crucial to patch it properly between versions of the same program, I feel that this should be should be in a one big directory instead of jumping all over the place).
+
+In order to start the build I have to run ./configure to analyze my Debian distro to create the proper configuration file. Used the command make install to install the program singular.
+
+I made some mistakes since download loading multiple packages and sources which causes confusion and frustration. I had to restart from the beginning of the first step again using the instruction provided by the developer. The best way to avoid all these different packages and sources is to use apt package tools which will properly download all the dependencies and necessary packages to install.
